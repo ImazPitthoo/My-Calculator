@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+    align-content: center;
+    display: flex;
+    background-image: url(https://wallpapercave.com/wp/8iAP1eI.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ans {
+    background-color: white;
+    width: 200px;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 25px;
+    align-self: 100px;
+    /* margin-top: 200px; */
+    /* margin-right: 40%; */
+    margin-left: 160px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+button {
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    border-bottom: 4px solid #66faff;
+    box-shadow: 6px 6px 6px #999;
+    user-select: none;
+    background: #9dfff8;
+    transition: background 0.05s linear;
+    transition: all .05s linear
+}
+
+button:hover {
+    background-color: #9feaec
+}
+
+button:active {
+    background-color: #5b7b8c;
+    box-shadow: 2px 2px 2px #777;
+    border-bottom: 1px solid #ff9488;
+    transform: translateY(3px);
+}
+
+.buts {
+    width: 50%;
+    height: 100px;
+    /* margin-top: 400px; */
+    display: flex;
+}
+
+.ban {
+    width: 100%;
+    margin-left: 560px;
+    margin-top: 180px;
+}
+
+.puts {
+    width: 200px;
+    height: 100px;
+    margin-left: 150px;
+    margin-bottom: 90px;
+}
+
+label {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#num1,
+#num2 {
+    background-color: azure;
+    outline: none;
+    border: none;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pressed {
+    box-shadow: 0px 3px 4px 0px red;
+    opacity: 0.9;
+}
