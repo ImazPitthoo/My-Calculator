@@ -54,18 +54,33 @@ clear.addEventListener('click',function(){
 
 })
 
-$(document).ready(function() {
-    https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3
-    var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
-    var audio2 = new Audio('assets//clickUp.mp3');
+
+// $(document).ready(function() {
+//     https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3
+//     var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+//     var audio2 = new Audio('assets//clickUp.mp3');
   
-    $("button").mousedown(function() {
-      audio2.load();
-      audio2.play();
-    });
+//     $("button").mousedown(function() {
+//       audio2.load();
+//       audio2.play();
+//     });
       
-    $("button").mouseup(function() {
-      audio.load();
+//     $("button").mouseup(function() {
+//       audio.load();
+//       audio.play();
+//     });
+//   });
+  const audio = new Audio("assets//clickUp.mp3");
+  const audio2 = new Audio("assets//click.mp3");
+  const buttons = document.querySelectorAll("button");
+  
+  buttons.forEach(button => {
+    button.addEventListener("mousedown", () => {
       audio.play();
     });
-  });
+    
+        button.addEventListener("mouseup", () => {
+          audio2.play();
+        });
+    });
+
